@@ -1,0 +1,19 @@
+{
+  "name": "dubai",
+  "version": "1.0.0",
+  "description": "Landing page for dubai agency",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "dubai",
+    "landing-page",
+    "tours"
+  ],
+  "author": "Ibrahim Alausa",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
