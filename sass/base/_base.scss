@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*root font-size for rem unit*/
+/*Always set this to percentage of the font-size specified by the browser. Just in case
+the user changes it in the settings*/
+
+/* Since we are relying on the fact that the initial on the browser will be 16px 
+but we want to start from 10px, we do a simple calculation 16px =100%, 10px = 1000/16=62.5%*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
