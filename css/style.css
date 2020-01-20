@@ -70,6 +70,22 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #5881af, #364f6b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -126,25 +142,25 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 5rem; }
   .row .col-1-of-2 {
-    width: calc((100%-6rem) / 2); }
+    width: calc((100%-5rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100%- 2 * 6rem) / 3); }
+    width: calc((100%- 2 * 5rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100%- 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100%- 2 * 5rem) / 3) + 5rem); }
   .row .col-1-of-4 {
-    width: calc((100%- 3 * 6rem) / 4); }
+    width: calc((100%- 3 * 5rem) / 4); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100%- 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100%- 3 * 5rem) / 4) + 5rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100%- 3 * 6rem) / 4) + 2 *6rem); }
+    width: calc( 3 * ((100%- 3 * 5rem) / 4) + 2 *5rem); }
 
 .header {
-  height: 95vh;
-  background-image: linear-gradient(to right, #7ed56f, rgba(40, 180, 133, 0.8)), url("../img/dubai.jpg");
+  height: 90vh;
+  background-image: linear-gradient(to right, #5881af, rgba(34, 46, 59, 0.8)), url("../img/dubai.png");
   background-position-x: 50%;
-  background-position-y: 75%;
+  background-position-y: 90%;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
@@ -160,3 +176,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 15rem 0;
+  /*
+  The height of our header vh is 90 and the polygon covers 75vh
+  remaining is 15vh. We will now make this block move up instead of 
+  down using margin.
+  */
+  margin-top: -15vh; }

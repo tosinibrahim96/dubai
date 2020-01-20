@@ -1,0 +1,12 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 15rem 0;
+
+  /*
+  The height of our header vh is 90 and the polygon covers 75vh
+  remaining is 15vh. We will now make this block move up instead of 
+  down using margin.
+  */
+
+  margin-top: -15vh;
+}
