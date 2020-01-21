@@ -10,3 +10,12 @@
 
   margin-top: -15vh;
 }
+
+.about-row{
+  display: flex;
+  justify-content: space-evenly;
+
+  &__inner{
+    width: 45%;
+  }
+}
