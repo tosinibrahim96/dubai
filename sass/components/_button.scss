@@ -58,15 +58,17 @@
   &:link,
   &:visited {
     font-size: 1.6rem;
-    color: $color-primary;
+    color: $color-white;
+    background-color: $color-primary;
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid $color-primary;
-    padding: 3px;
+    padding: 5px;
+    text-transform: capitalize;
   }
 
   &:hover {
-    background-color: $color-primary;
+    background-color: $color-primary-dark;
     color: $color-white;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     transform: translateY(-2px);

@@ -1,15 +1,17 @@
 .header {
-  height: 90vh;
+  height: 100vh;
+  background-color: $color-hero;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-light, 1),
-      rgba($color-primary-dark, 0.8)
+      rgba($color-primary-light, 0.1),
+      rgba($color-primary-dark, 0.9)
     ),
-    url("../img/dubai.png");
-  background-position-x: 50%;
-  background-position-y: 90%;
+    url("../img/hero.jpg");
+  background-position-x: 95%;
+  background-position-y: 9%;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: circle(100% 90% at 95% 10%);
+  clip-path: ellipse(100% 90% at 95% 10%);
   position: relative;
 
   &__logo-box {
