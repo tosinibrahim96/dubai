@@ -39,13 +39,13 @@ body {
 }
 
 .heading-tetiary {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   @include colourHeading;
 }
 
-.paragraph {
+.about-row__paragraph {
   font-size: 1.6rem;
   line-height: 2.0;
 
