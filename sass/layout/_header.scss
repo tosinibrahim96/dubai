@@ -1,23 +1,25 @@
 .header {
   height: 100vh;
-  background-color: $color-hero;
+  background-color: $color-primary-dark;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-light, 0.1),
-      rgba($color-primary-dark, 0.9)
+      rgba($color-primary-dark, 0.9),
+      rgba($color-primary-dark, 0.8)
     ),
     url("../img/hero.jpg");
-  background-position-x: 95%;
-  background-position-y: 9%;
   background-size: cover;
+  background-position:top;
+  background-repeat: no-repeat;
   -webkit-clip-path: circle(100% 90% at 95% 10%);
-  clip-path: ellipse(100% 90% at 95% 10%);
+  clip-path: ellipse(100% 90% at 85% 19%);
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   &__logo-box {
     position: absolute;
     top: 40px;
-    left: 40px;
+    left: 20px;
   }
 
   &__logo {
@@ -26,7 +28,7 @@
 
   &__text-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
