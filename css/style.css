@@ -59,15 +59,15 @@ body {
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-out; }
   .heading-primary--sub {
     display: block;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    letter-spacing: 1.2rem;
+    letter-spacing: 1rem;
     animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
@@ -107,7 +107,7 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1.4rem 3rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
@@ -166,57 +166,25 @@ body {
 
 .header {
   height: 100vh;
-  background-color: #136991;
-  background-image: linear-gradient(to right, rgba(88, 129, 175, 0.1), rgba(34, 46, 59, 0.9)), url("../img/hero.jpg");
-  background-position-x: 95%;
-  background-position-y: 9%;
+  background-color: #222e3b;
+  background-image: linear-gradient(to right, rgba(34, 46, 59, 0.9), rgba(34, 46, 59, 0.8)), url("../img/hero.jpg");
   background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   -webkit-clip-path: circle(100% 90% at 95% 10%);
-  clip-path: ellipse(100% 90% at 95% 10%);
-  position: relative; }
+  clip-path: ellipse(100% 90% at 85% 19%);
+  position: relative;
+  display: flex;
+  flex-direction: column; }
   .header__logo-box {
     position: absolute;
     top: 40px;
-    left: 40px; }
+    left: 20px; }
   .header__logo {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-
-.section-about {
-  margin: 15rem 0;
-  display: flex;
-  flex-direction: column; }
-
-.about-row {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 5rem; }
-  .about-row--down {
-    padding-top: 5rem;
-    background-color: #f0f0f0; }
-  .about-row__left {
-    width: 45%; }
-  .about-row__right {
-    width: 45%; }
-    .about-row__right .margin-top-negative {
-      margin-top: -2%; }
-
-.about-row__img {
-  width: 100%;
-  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.1);
-  -webkit-filter: contrast(50%);
-  filter: contrast(50%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out; }
-  .about-row__img:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    transform: translateY(-2px); }
-
-.about-row__video {
-  width: 100%; }
