@@ -188,3 +188,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .header__text-box {
+    position: absolute;
+    top: 40%; } }
