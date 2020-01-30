@@ -224,3 +224,6 @@ body {
 .about-row__img {
   width: 100%;
   transition: 600ms transform cubic-bezier(0.19, 1, 0.22, 1); }
+
+.about-row__video {
+  width: 100%; }
