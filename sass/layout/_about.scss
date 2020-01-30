@@ -1,5 +1,5 @@
 .section-about {
-  margin: 15rem 0;
+  margin: 10rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,22 +9,27 @@
   display: flex;
   flex-direction: column;
   padding: 0 2rem 5rem 2rem;
+}
 
-  &__down {
-    padding-top: 5rem;
-    background-color: #f0f0f0;
-  }
+.about-row__down {
+  padding-top: 5rem;
+  background-color: #f0f0f0;
+}
 
-  &__paragraph{
-    padding-top: 3rem;
+.media-container__overflow {
+  overflow: hidden;
+  &:hover {
+    .about-row__img {
+      transform: scale(1.5);
+    }
   }
+}
+
+.about-row__paragraph {
+  padding-top: 3rem;
 }
 
 .about-row__img {
   width: 100%;
-
-}
-
-.about-row__video {
-  width: 100%;
+  transition: 600ms transform cubic-bezier(0.19, 1, 0.22, 1);
 }
