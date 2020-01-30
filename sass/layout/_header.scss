@@ -8,10 +8,10 @@
     ),
     url("../img/hero.jpg");
   background-size: cover;
-  background-position:top;
+  background-position: top;
   background-repeat: no-repeat;
-  -webkit-clip-path: circle(100% 90% at 95% 10%);
-  clip-path: ellipse(100% 90% at 85% 19%);
+  -webkit-clip-path: ellipse(100% 90% at 85% 10%);
+  clip-path: ellipse(100% 90% at 85% 10%);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -35,19 +35,16 @@
   }
 }
 
-
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
-  .header{
+  .header {
     &__text-box {
       position: absolute;
       top: 40%;
     }
   }
-  
 }
