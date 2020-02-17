@@ -2,7 +2,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  background-color: $color-grey-light-1;  
+  background-color: $color-grey-light-1;
   color: $color-grey-dark;
 }
 
@@ -45,11 +45,23 @@ body {
   @include colourHeading;
 }
 
+.attraction-text__header {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include colourHeading;
+}
+
 .about-row__paragraph {
   font-size: 1.6rem;
-  line-height: 2.0;
+  line-height: 2;
 
   &:not(:last-child) {
     margin-bottom: 4rem;
   }
+}
+
+.attraction-text__paragraph {
+  font-size: 1.5rem;
+  line-height: 2;
 }
