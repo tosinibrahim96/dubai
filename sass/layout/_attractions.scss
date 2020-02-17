@@ -1,0 +1,63 @@
+.section-attractions {
+  padding: 0 2rem 5rem 2rem;
+}
+
+.attraction-row {
+  position: relative;
+  margin-bottom: 80%;
+}
+
+.long-text {
+  margin-bottom: 100%;
+}
+
+.attraction-img-container {
+  overflow: hidden;
+  &:hover {
+    .attraction-img {
+      transform: scale(1.5);
+    }
+  }
+}
+
+
+.attraction-img {
+  width: 100%;
+  transition: 600ms transform cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.attraction-text {
+  padding: 0 2rem 5rem 2rem;
+  position: absolute;
+  top: 85%;
+  background-color: #fff;
+  width: 95%;
+  left: 5%;
+  padding: 2.5rem;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.attraction-text::before {
+  content: "";
+  background-color: #ed8b001c;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border-top-left-radius: 3px;
+}
+
+.attraction-text::after {
+  content: "";
+  background-color: #5881af59;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  border-bottom-right-radius: 3px;
+}
