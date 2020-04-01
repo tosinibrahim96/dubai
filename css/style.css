@@ -292,3 +292,75 @@ body {
   right: 0;
   border-radius: 50%;
   border-bottom-right-radius: 3px; }
+
+.section-ethnicity {
+  padding: 0 2rem 5rem 2rem; }
+
+.slider,
+.wrap {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; }
+
+.slide-content {
+  height: 70%; }
+
+.wrap {
+  position: relative; }
+  .wrap .slider-control-container {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-around; }
+    .wrap .slider-control-container .slider-control {
+      height: 5px;
+      border: 1.5px solid #fff;
+      cursor: pointer; }
+      .wrap .slider-control-container .slider-control.active {
+        background-color: #fff;
+        border: none; }
+      .wrap .slider-control-container .slider-control:hover {
+        background-color: #fff;
+        border: none; }
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.slide1 {
+  animation-name: moveInLeft;
+  animation-duration: 0.5s;
+  background-image: url("../../img/dubai-medinat.jpg"); }
+
+.slide2 {
+  animation-name: moveInLeft;
+  animation-duration: 0.5s;
+  background-image: url("../../img/hero.jpg"); }
+
+.slide3 {
+  animation-name: moveInLeft;
+  animation-duration: 0.5s;
+  background-image: url("../../img/dubai-fountain.jpg"); }
+
+@keyframes moveInLeft {
+  0% {
+    display: block;
+    transform: translateX(-10px); }
+  100% {
+    display: none;
+    transform: translate(0); } }
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .slide-content span {
+    font-size: 5rem;
+    color: #fff; }
