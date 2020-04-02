@@ -1,7 +1,9 @@
 const startSlide = () => {
   const sliderControlsFragment = document.createDocumentFragment();
   const sliderDivs = document.querySelectorAll('.slide');
-  const sliderControlsContainer = document.querySelector('.slider-control-container');
+  const sliderControlsContainer = document.querySelector(
+    '.slider-control-container'
+  );
   const numberOfSliderDivs = sliderDivs.length;
 
   // Each time we change a slide, we want to reset others to display none
@@ -11,18 +13,11 @@ const startSlide = () => {
     }
   };
 
-  // Each time we change a slide, we want to remove the active class from others
-  const resetActiveSliderControl = (sliderControls) => {
-    for (let index = 0; index < sliderControls.length; index += 1) {
-      sliderControls[index].classList.remove('active');
-    }
-  };
-
   // Show corresponding slide for slider control clicked
   const showCorrespondingSlide = (sliderControls, index) => {
     changeSlidesToDisplayNone();
-    resetActiveSliderControl(sliderControls);
 
+    document.querySelector('.active').classList.remove('active');
     sliderControls[index].classList.add('active');
     sliderDivs[index].style.display = 'block';
   };
