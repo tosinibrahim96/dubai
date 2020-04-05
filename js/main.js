@@ -32,7 +32,7 @@ const startSlide = () => {
   sliderControlsContainer.appendChild(sliderControlsFragment);
 
   // Generate dynamic CSS width style for each slider control, then add a listener
-  const sliderControlsContainerWidth = 90;
+  const sliderControlsContainerWidth = 60;
   const sliderControlsCount = sliderControlsContainer.childElementCount;
   const sliderControls = document.querySelectorAll('.slider-control');
   const sliderControlWidth = sliderControlsContainerWidth / sliderControlsCount;

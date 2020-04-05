@@ -212,7 +212,7 @@ body {
     top: 40%; } }
 
 .section-about {
-  margin: 10rem 0;
+  margin: 10rem 0 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -242,7 +242,8 @@ body {
   width: 100%; }
 
 .section-attractions {
-  padding: 0 2rem 5rem 2rem; }
+  padding: 0 2rem 5rem 2rem;
+  margin-bottom: 2rem; }
 
 .attraction-row {
   position: relative;
@@ -294,7 +295,8 @@ body {
   border-bottom-right-radius: 3px; }
 
 .section-ethnicity {
-  padding: 0 2rem 5rem 2rem; }
+  padding: 3rem 2rem 5rem 2rem;
+  background-color: #f0f0f0; }
 
 .slider,
 .wrap {
@@ -335,17 +337,18 @@ body {
 .slide1 {
   animation-name: moveInLeft;
   animation-duration: 0.5s;
-  background-image: url("../../img/dubai-medinat.jpg"); }
+  background-image: url("../../img/emarati.png"); }
 
 .slide2 {
   animation-name: moveInLeft;
   animation-duration: 0.5s;
-  background-image: url("../../img/hero.jpg"); }
+  background-image: url("../../img/indianpeople.png"); }
 
 .slide3 {
   animation-name: moveInLeft;
   animation-duration: 0.5s;
-  background-image: url("../../img/dubai-fountain.jpg"); }
+  background-image: url("../../img/bangladesh.png");
+  background-position-x: 1%; }
 
 @keyframes moveInLeft {
   0% {
@@ -359,8 +362,35 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center; }
-  .slide-content span {
-    font-size: 5rem;
+  width: 70%;
+  margin-left: 5%; }
+  .slide-content .ethnicity-text__header {
+    font-size: 2.5rem;
     color: #fff; }
+  .slide-content .ethnicity-text__paragraph {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin-bottom: 5%; }
+  .slide-content .ethnicity-btn {
+    width: 60%; }
+    .slide-content .ethnicity-btn:hover {
+      background-color: #fff;
+      color: #222e3b;
+      box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid #fff;
+      transform: translateY(-2px); }
+
+.footer {
+  background: #222e3b;
+  color: #f0f0f0;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.01);
+  padding: 3%; }
+  .footer .ethnicity-btn {
+    width: 40%; }
+    .footer .ethnicity-btn:hover {
+      background-color: #fff;
+      color: #222e3b;
+      box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid #fff;
+      transform: translateY(-2px); }
