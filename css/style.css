@@ -387,7 +387,8 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.01);
   padding: 3%; }
   .footer .ethnicity-btn {
-    width: 40%; }
+    width: 40%;
+    padding: 0; }
     .footer .ethnicity-btn:hover {
       background-color: #fff;
       color: #222e3b;
