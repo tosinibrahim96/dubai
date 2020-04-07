@@ -1,15 +1,21 @@
 .section-attractions {
-  padding: 0 2rem 5rem 2rem;
-  margin-bottom: 2rem;
+  padding: 0 2rem 3rem 2rem;
 }
 
 .attraction-row {
   position: relative;
-  margin-bottom: 80%;
+  margin-bottom: 250px;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.section-show {
+  opacity: 1;
 }
 
 .long-text {
-  margin-bottom: 100%;
+  margin-bottom: 280px;
 }
 
 .attraction-img-container {
@@ -17,10 +23,10 @@
   &:hover {
     .attraction-img {
       transform: scale(1.5);
+      cursor: pointer;
     }
   }
 }
-
 
 .attraction-img {
   width: 100%;
@@ -37,11 +43,17 @@
   padding: 2.5rem;
   border-top-left-radius: 3px;
   border-bottom-right-radius: 3px;
+
+  &.attraction-text--left{
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 3px;
+  }
 }
 
 .attraction-text::before {
-  content: "";
-  background-color: #ed8b001c;
+  content: '';
+  background-color: #ef8c007d;
   height: 50px;
   width: 50px;
   position: absolute;
@@ -52,7 +64,7 @@
 }
 
 .attraction-text::after {
-  content: "";
+  content: '';
   background-color: #5881af59;
   height: 50px;
   width: 50px;

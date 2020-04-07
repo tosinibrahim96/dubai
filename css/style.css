@@ -39,7 +39,8 @@ the user changes it in the settings*/
 /* Since we are relying on the fact that the initial on the browser will be 16px 
 but we want to start from 10px, we do a simple calculation 16px =100%, 10px = 1000/16=62.5%*/
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
@@ -48,7 +49,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  background-color: #f7f7f7;
+  background-color: #f4f9ffa3;
   color: #777; }
 
 .heading-primary {
@@ -180,12 +181,12 @@ body {
 .header {
   height: 100vh;
   background-color: #222e3b;
-  background-image: linear-gradient(to right, rgba(34, 46, 59, 0.9), rgba(34, 46, 59, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right, rgba(34, 46, 59, 0.1), rgba(34, 46, 59, 0.1)), url("../img/hero.png");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-clip-path: ellipse(100% 90% at 85% 10%);
-  clip-path: ellipse(100% 90% at 85% 10%);
+  clip-path: ellipse(97% 80% at 95% 20%);
   position: relative;
   display: flex;
   flex-direction: column; }
@@ -198,7 +199,7 @@ body {
   .header__text-box {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     text-align: center; }
 
@@ -212,7 +213,7 @@ body {
     top: 40%; } }
 
 .section-about {
-  margin: 10rem 0 5rem 0;
+  margin: 6rem 0 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -224,15 +225,10 @@ body {
 
 .about-row__down {
   padding-top: 5rem;
-  background-color: #f0f0f0; }
-
-.media-container__overflow {
-  overflow: hidden; }
-  .media-container__overflow:hover .about-row__img {
-    transform: scale(1.5); }
+  background-color: #f2f8ffde; }
 
 .about-row__paragraph {
-  padding-top: 3rem; }
+  padding-top: 1rem; }
 
 .about-row__img {
   width: 100%;
@@ -241,21 +237,33 @@ body {
 .about-row__video {
   width: 100%; }
 
+.about-row__video--text {
+  margin-top: 5%; }
+  .about-row__video--text span {
+    display: block;
+    margin-top: 4%; }
+
 .section-attractions {
-  padding: 0 2rem 5rem 2rem;
-  margin-bottom: 2rem; }
+  padding: 0 2rem 3rem 2rem; }
 
 .attraction-row {
   position: relative;
-  margin-bottom: 80%; }
+  margin-bottom: 250px;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in; }
+
+.section-show {
+  opacity: 1; }
 
 .long-text {
-  margin-bottom: 100%; }
+  margin-bottom: 280px; }
 
 .attraction-img-container {
   overflow: hidden; }
   .attraction-img-container:hover .attraction-img {
-    transform: scale(1.5); }
+    transform: scale(1.5);
+    cursor: pointer; }
 
 .attraction-img {
   width: 100%;
@@ -271,10 +279,14 @@ body {
   padding: 2.5rem;
   border-top-left-radius: 3px;
   border-bottom-right-radius: 3px; }
+  .attraction-text.attraction-text--left {
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 3px; }
 
 .attraction-text::before {
-  content: "";
-  background-color: #ed8b001c;
+  content: '';
+  background-color: #ef8c007d;
   height: 50px;
   width: 50px;
   position: absolute;
@@ -284,7 +296,7 @@ body {
   border-top-left-radius: 3px; }
 
 .attraction-text::after {
-  content: "";
+  content: '';
   background-color: #5881af59;
   height: 50px;
   width: 50px;
@@ -296,7 +308,7 @@ body {
 
 .section-ethnicity {
   padding: 3rem 2rem 5rem 2rem;
-  background-color: #f0f0f0; }
+  background-color: #f2f8ffde; }
 
 .slider,
 .wrap {
@@ -353,10 +365,7 @@ body {
 @keyframes moveInLeft {
   0% {
     display: block;
-    transform: translateX(-10px); }
-  100% {
-    display: none;
-    transform: translate(0); } }
+    transform: translateX(-50px); } }
 
 .slide-content {
   display: flex;
@@ -385,7 +394,7 @@ body {
   color: #f0f0f0;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.01);
-  padding: 3%; }
+  padding: 1%; }
   .footer .ethnicity-btn {
     width: 40%;
     padding: 0; }
@@ -395,3 +404,83 @@ body {
       box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2);
       border-bottom: 1px solid #fff;
       transform: translateY(-2px); }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 380px) and (max-width: 767px) {
+  .attraction-row {
+    margin-bottom: 200px; }
+  .long-text {
+    margin-bottom: 230px; } }
+
+@media (min-width: 768px) {
+  .expo-dubai-header {
+    margin-top: 2.5rem; }
+  .about-row {
+    padding: 0 5rem 5rem 5rem; }
+  .about-row__paragraph {
+    padding-top: 2rem;
+    font-size: 1.8rem; }
+  .attraction-text__paragraph {
+    font-size: 1.8em; }
+  .section-attractions {
+    padding: 0 5rem 3rem 5rem; }
+  .attraction-row {
+    width: 48%;
+    margin-bottom: 320px; }
+  .attractions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .attraction-text {
+    height: 320px; }
+  .section-ethnicity {
+    padding: 3rem 5rem 5rem 5rem; }
+  .slide-content .ethnicity-text__paragraph {
+    font-size: 1.8rem; }
+  .heading-tetiary.heading-tetiary--first {
+    text-align: center; }
+  .image-paragraph {
+    text-align: center; }
+  .slide-content .ethnicity-btn {
+    width: 30%; }
+  .heading-primary--main {
+    font-size: 6rem; }
+  .heading-primary--sub {
+    font-size: 2.4rem; }
+  .heading-secondary {
+    font-size: 3.5rem; }
+  .heading-tetiary {
+    font-size: 3.0rem; } }
+
+@media (min-width: 1200px) {
+  .about-row {
+    padding: 0 10rem 5rem 10rem; }
+  .about-row__paragraph {
+    padding-top: 2rem;
+    font-size: 2rem; }
+  .about-row__body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    .about-row__body .about-row__video {
+      width: 45%; }
+    .about-row__body .about-row__video--text {
+      width: 50%;
+      font-size: 1.8rem;
+      padding-top: 0;
+      margin-top: -10px;
+      text-align: justify; }
+      .about-row__body .about-row__video--text span {
+        display: block;
+        margin-top: 4%; }
+  .section-attractions {
+    padding: 0 10rem 3rem 10rem; }
+  .section-ethnicity {
+    padding: 3rem 10rem 5rem 10rem; }
+  .slide-content .ethnicity-text__paragraph {
+    font-size: 2.5rem; }
+  .slide-content .ethnicity-btn {
+    width: 20%; } }
