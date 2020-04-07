@@ -1,0 +1,20 @@
+.footer {
+  background: $color-primary-dark;
+  color: #f0f0f0;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.01);
+  padding: 3%;
+
+  .ethnicity-btn {
+    width: 40%;
+    padding: 0;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-primary-dark;
+      box-shadow: 0 1rem 2rem rgba($color-white, 0.2);
+      border-bottom: 1px solid $color-white;
+      transform: translateY(-2px);
+    }
+  }
+}
