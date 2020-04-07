@@ -1,0 +1,162 @@
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 380px) and (max-width: 767px) {
+  .attraction-row {
+    margin-bottom: 200px;
+  }
+
+  .long-text {
+    margin-bottom: 230px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .expo-dubai-header {
+    margin-top: 2.5rem;
+  }
+
+  .about-row {
+    padding: 0 5rem 5rem 5rem;
+  }
+
+  .about-row__paragraph {
+    padding-top: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .attraction-text__paragraph {
+    font-size: 1.8em;
+  }
+
+  .section-attractions {
+    padding: 0 5rem 3rem 5rem;
+  }
+
+  .attraction-row {
+    width: 48%;
+    margin-bottom: 320px;
+  }
+
+  .attractions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .attraction-text {
+    height: 320px;
+  }
+
+  .section-ethnicity {
+    padding: 3rem 5rem 5rem 5rem;
+  }
+
+  .slide-content {
+    .ethnicity-text__paragraph {
+      font-size: 1.8rem;
+    }
+  }
+
+  .heading-tetiary {
+    &.heading-tetiary--first {
+      text-align: center;
+    }
+  }
+
+  .image-paragraph {
+    text-align: center;
+  }
+
+  .slide-content {
+    .ethnicity-btn {
+      width: 30%;
+    }
+  }
+  .heading-primary {
+    
+  
+    &--main {
+      
+      font-size: 6rem;
+      
+    }
+  
+    &--sub {
+      
+      font-size: 2.4rem;
+     
+    }
+  }
+  
+  .heading-secondary {
+    font-size: 3.5rem;
+  
+  }
+  
+  .heading-tetiary {
+    font-size: 3.0rem;
+    ;
+  }
+  
+
+
+
+}
+
+// Large devices (desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .about-row {
+    padding: 0 10rem 5rem 10rem;
+  }
+
+  .about-row__paragraph {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .about-row__body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .about-row__video {
+      width: 45%;
+    }
+
+    .about-row__video--text {
+      width: 50%;
+      font-size: 1.8rem;
+      padding-top: 0;
+      margin-top: -10px;
+      text-align: justify;
+
+      span {
+        display: block;
+        margin-top: 4%;
+      }
+    }
+  }
+
+  .section-attractions {
+    padding: 0 10rem 3rem 10rem;
+  }
+
+  .section-ethnicity {
+    padding: 3rem 10rem 5rem 10rem;
+  }
+
+  .slide-content {
+    .ethnicity-text__paragraph {
+      font-size: 2.5rem;
+    }
+  }
+  .slide-content {
+    .ethnicity-btn {
+      width: 20%;
+    }
+  }
+}

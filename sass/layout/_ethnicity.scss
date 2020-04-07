@@ -1,6 +1,6 @@
 .section-ethnicity {
   padding: 3rem 2rem 5rem 2rem;
-  background-color: #f0f0f0;
+  background-color: #f2f8ffde;
 }
 
 .slider,
@@ -71,12 +71,7 @@
 @keyframes moveInLeft {
   0% {
     display: block;
-    transform: translateX(-10px);
-  }
-
-  100% {
-    display: none;
-    transform: translate(0);
+    transform: translateX(-50px);
   }
 }
 

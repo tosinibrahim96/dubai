@@ -3,15 +3,15 @@
   background-color: $color-primary-dark;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-dark, 0.9),
-      rgba($color-primary-dark, 0.8)
+      rgba($color-primary-dark, 0.1),
+      rgba($color-primary-dark, 0.1)
     ),
-    url("../img/hero.jpg");
+    url("../img/hero.png");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-clip-path: ellipse(100% 90% at 85% 10%);
-  clip-path: ellipse(100% 90% at 85% 10%);
+  clip-path: ellipse(97% 80% at 95% 20%);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
   &__text-box {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     text-align: center;
   }

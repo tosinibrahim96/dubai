@@ -1,8 +1,9 @@
+/* eslint-disable linebreak-style */
 const startSlide = () => {
   const sliderControlsFragment = document.createDocumentFragment();
   const sliderDivs = document.querySelectorAll('.slide');
   const sliderControlsContainer = document.querySelector(
-    '.slider-control-container'
+    '.slider-control-container',
   );
   const numberOfSliderDivs = sliderDivs.length;
 
@@ -51,3 +52,25 @@ const startSlide = () => {
 };
 
 startSlide();
+
+// section for opacity animation for attractions
+const attractionRows = document.querySelectorAll('.attraction-row');
+
+const sectionOneOptions = {};
+
+const sectionsObserver = new IntersectionObserver(
+  (entries, sectionObserver) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+      entry.target.classList.add('section-show');
+      sectionObserver.unobserve(entry.target);
+    });
+  },
+  sectionOneOptions,
+);
+
+attractionRows.forEach((section) => {
+  sectionsObserver.observe(section);
+});
